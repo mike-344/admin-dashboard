@@ -28,6 +28,7 @@ a{
     padding: 32px 16px;
     display: flex;
     gap: 12px;
+    
 }
 
 .side-nav, .side-settings{
@@ -42,6 +43,7 @@ a{
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 50px;
+    margin-left: 8px;
     gap: 50px;
 }
 
@@ -116,7 +118,7 @@ a{
 
 .announcement-cards, .trend-cards{
     background-color: white;
-    width: 200px;
+    width: 240px;
     height: fit-content;
     padding: 24px;
     border-radius: 8px;
@@ -134,4 +136,28 @@ a{
 }
 .trending{
     margin-top: 24px;
+}
+
+.sidebar img{
+    width: 18px;
+    height: auto;
+    color: white;
+}
+.side-dash img{
+    width: 26px;
+    height: auto;
+}
+
+.filter-white{
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(219deg) brightness(111%) contrast(101%);
+}
+
+.side-nav > div, .side-settings > div, .side-dash{
+    display: flex;
+    gap: 12px;
+    
+}
+
+.side-dash{
+    align-items: center;
 }
