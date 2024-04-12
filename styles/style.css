@@ -84,6 +84,8 @@ a{
     height: 100%;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding-bottom: 12px;
+    margin-top: 20px;
    
     
 }
@@ -193,7 +195,7 @@ input{
 
 .snake-logo{
     background-color:skyblue;
-    width: 40px;
+    width: 45px;
     height: auto;
     border-radius: 30px;
   
@@ -201,19 +203,24 @@ input{
 }
 
 .logo-greeting .snake-logo{
-    width: 50px;
+    width: 55px;
 }
 
 .trend-cards > div{
     display: flex;
     gap: 12px;
-    margin-bottom: 5px;
+    
+    align-items: center;
+}
+.trend-cards > div:first-child, .trend-cards > div:first-child + div, .trend-cards > div:first-child + div + div{
+    margin-bottom: 14px;
 }
 
 .trend-cards img{
-    width: 50px;
+    width: 45px;
     height: auto;
     border-radius: 30px;
+    padding: 6px;
 }
 
 .shark{
@@ -229,4 +236,53 @@ background-color: lightcoral;
 }
 .kangaroo{
 background-color: yellowgreen;
+}
+
+.announcement-cards > div{
+    border-bottom: 1px solid rgba(56, 50, 50, 0.44);
+}
+.announcement-cards > div:last-child{
+    border-bottom: 0px;
+}
+.announcement-cards > div:first-child, .announcement-cards > div:first-child + div{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.header{
+    height: fit-content;
+    box-shadow: 0 2px 6px -6px black;
+    position: relative;
+}
+
+.trend-cards, .announcement-cards, .card{
+    box-shadow: 4px 4px 6px -6px black;
+}
+
+.card{
+    color:gray;
+}
+
+.card::first-line{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+.announcement-cards{
+color: gray;
+}
+.content-head{
+    font-weight: bold;
+    font-size: 20px;
+}
+.announcement-cards > div::first-line{
+    font-weight:600;
+    color: black;
+}
+.trendline{
+    color: gray;
+}
+.card-text{
+    margin-top: 4px;
 }
