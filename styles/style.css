@@ -286,3 +286,17 @@ color: gray;
 .card-text{
     margin-top: 4px;
 }
+.greeting{
+    font-weight: 600;
+}
+.greeting > p:last-of-type{
+    font-size: 20px;
+}
+.greeting > p:first-of-type{
+    font-size: 14px;
+    font-weight: 550;
+}
+.user-account a{
+    font-weight: 600;
+    font-size: 16px;
+}
